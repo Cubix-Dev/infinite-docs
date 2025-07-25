@@ -1,14 +1,14 @@
-site_name: MkDocs Bootswatch Themes
-site_url: https://mkdocs.github.io/mkdocs-bootswatch/
-site_description: MkDocs Bootswatch Themes
-site_author: Tom Christie & Dougal Matthews
+site_name: Docs - Infinite Developer
+site_url: https://docs.cubixdev.org
+site_description: Cubix Infinite Developer Documentation
+site_author: Cubix Entertainment
 
 repo_url: https://github.com/mkdocs/mkdocs-bootswatch
 
-copyright: Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, <a href="http://www.dougalmatthews.com/">Dougal Matthews</a>.
+copyright: Copyright &copy; Cubix Entertainment LLC 2025 | All rights reserved. <br>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, <a href="http://www.dougalmatthews.com/">Dougal Matthews</a>.
 
 theme:
-    name: flatly
+    name: slate
 
 markdown_extensions:
     - toc:

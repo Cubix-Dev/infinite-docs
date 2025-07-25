@@ -4,15 +4,16 @@ requires = ["setuptools>=61.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = 'mkdocs-bootswatch'
+name = 'mkdocs-bootswatch-finite'
 dynamic = ['version']
-description = "Bootswatch themes for MkDocs"
+description = "Infinite Bootswatch theme for MkDocs"
 readme = {file = 'README.md', content-type='text/markdown'}
 authors = [
     {name = 'Dougal Matthews', email = 'dougal@dougalmatthews.com'}
 ]
 maintainers = [
-    {name = 'Waylan Limberg', email = 'waylan.limberg@icloud.com'}
+    {name = 'Waylan Limberg', email = 'waylan.limberg@icloud.com'},
+    {name = 'Gabriel Thompson', email = 'gabriel.thomp@cubixdev.org'}
 ]
 license = {file = 'LICENSE'}
 requires-python = '>=3.5'
@@ -26,26 +27,7 @@ dependencies = [
 'Issue Tracker' = 'https://github.com/mkdocs/mkdocs-bootswatch/issues'
 
 [project.entry-points.'mkdocs.themes']
-cerulean = 'mkdocs_bootswatch.cerulean'
-cosmo = 'mkdocs_bootswatch.cosmo'
-cyborg = 'mkdocs_bootswatch.cyborg'
-darkly = 'mkdocs_bootswatch.darkly'
-flatly = 'mkdocs_bootswatch.flatly'
-journal = 'mkdocs_bootswatch.journal'
-litera = 'mkdocs_bootswatch.litera'
-lumen = 'mkdocs_bootswatch.lumen'
-lux = 'mkdocs_bootswatch.lux'
-materia = 'mkdocs_bootswatch.materia'
-minty = 'mkdocs_bootswatch.minty'
-pulse = 'mkdocs_bootswatch.pulse'
-sandstone = 'mkdocs_bootswatch.sandstone'
-simplex = 'mkdocs_bootswatch.simplex'
-slate = 'mkdocs_bootswatch.slate'
-solar = 'mkdocs_bootswatch.solar'
-spacelab = 'mkdocs_bootswatch.spacelab'
-superhero = 'mkdocs_bootswatch.superhero'
-united = 'mkdocs_bootswatch.united'
-yeti = 'mkdocs_bootswatch.yeti'
+infinite = 'mkdocs_bootswatch.infinite'
 
 [tool.setuptools]
 license-files = ['LICENSE', 'bootswatch.LICENSE']
