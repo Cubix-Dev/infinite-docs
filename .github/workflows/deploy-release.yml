@@ -18,6 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install mkdocs
+          python -m pip install pymdownx
       - name: Publish to GitHub Pages
         if: success()
         run: |
