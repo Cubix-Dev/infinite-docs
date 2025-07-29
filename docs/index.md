@@ -37,7 +37,7 @@ As a developer, you can easily mix and match the implementation of features prov
 
 ```bash
 meson setup build --prefix=/usr
-ninja -C build install
+sudo ninja -C build install
 ```
 
 Once you're ready to start building your first project head over to the [Getting Started documentation](../getting_started) to learm some basic tips and tricks on how to start using the Infinite Library.
