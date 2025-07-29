@@ -1,7 +1,7 @@
 # FiniteBtn
 
 <div class="alert alert-info part text-info">
-❔ FiniteBtn was last modified in **v0.4.0**
+❔ FiniteBtn was last modified in <b>0.4.0</b>
 </div>
 
 ```c

@@ -1,7 +1,7 @@
 # FiniteWindowInfo
 
 <div class="alert alert-info part text-info">
-❔ FiniteWindowInfo was last modified in **v0.1.8**
+❔ FiniteWindowInfo was last modified in <b>0.1.8</b>
 </div>
 
 ```c
@@ -36,4 +36,4 @@ In order to be Infinite compliant, games should be the full size of the screen.
 ## Related Docs
 
 [`FiniteShell`](../FiniteShell)<br>
-[`finite_window_size_set`](../functions/draw/finite_window_size_set)
+[`finite_window_size_set`](../../functions/draw/finite_window_size_set)

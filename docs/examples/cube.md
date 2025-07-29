@@ -1,7 +1,7 @@
 # Cube
 The Finite Cube Demo
 <div class="alert alert-info part text-info">
-This demo was created with libfinite v0.6.0
+This demo was created with libfinite <b>v0.6.0</b>
 </div>
 
 This demo shows off (mostly) everything libfinite can do at this time.

@@ -1,7 +1,9 @@
 # finite_window_size_set
-:::info
-❔ finite_window_size_set was last modified in **v0.6.0**
-:::
+
+<div class="alert alert-info part text-info">
+❔ finite_window_size_set was last modified in <b>v0.6.0</b>
+</div>
+
 ```c
 void finite_window_size_set(FiniteShell *shell, int xPos, int yPos, int width, int height)
 ```
@@ -19,6 +21,8 @@ The `finite_window_size_set` function attempts to resize a window with a given [
 |`int width`|The new width.|
 |`int height`|The new height|
 
+## Code Example
+
 ```c 
 FiniteWindowInfo *det = myShell->details;
     int32_t true_width = det->width;
@@ -33,6 +37,6 @@ In order to call this function you **must** call [`finite_window_init`](../finit
 This function is meant to be used to resize windows but in production, all Infinite applications must be the full size of the screen which they are by default.
 
 ## Related Docs
-[`FiniteShell`](../../FiniteShell)<br>
+[`FiniteShell`](../../../types/FiniteShell)<br>
 [`finite_window_init`](../finite_window_init)<br>
 [`finite_overlay_init`](../finite_overlay_init)

@@ -1,7 +1,7 @@
 # FiniteShell
 
 <div class="alert alert-info part text-info">
-❔ FiniteShell was last modified in **v0.4.0**
+❔ FiniteShell was last modified in <b>0.4.0</b>
 </div>
 
 ```c

@@ -1,7 +1,7 @@
 # finite_overlay_init
 
 <div class="alert alert-info part text-info">
-❔ finite_overlay_init was last modified in **v0.6.0**
+❔ finite_overlay_init was last modified in <b>v0.6.0</b>
 </div>
 
 ```c
@@ -18,12 +18,16 @@ The `finite_overlay_init` function creates a new layer shell window with a given
 |`int layer`|The [layer](https://wayland.app/protocols/wlr-layer-shell-unstable-v1#zwlr_layer_shell_v1:enum:layer) of the overlay|
 |`char *name`|The name of the layer.|
 
-```c
-finite_overlay_init(myShell);
+## Code Example
 
-if (!myShell) {
-    FINITE_LOG_FATAL("Unable to make shell");
-}
+```c
+    #include <finite/draw.h>
+
+    finite_overlay_init(myShell);
+
+    if (!myShell) {
+        FINITE_LOG_FATAL("Unable to make shell");
+    }
 ```
 
 ## Standard Usage
@@ -32,5 +36,5 @@ When creating a new popup (NOT APPLICATION), you **must** call this function. Al
 
 ## Related Docs
 
-[`FiniteShell`](../../FiniteShell)<br>
+[`FiniteShell`](../../../types/FiniteShell)<br>
 [`finite_window_init`](../finite_window_init)

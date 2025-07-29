@@ -1,7 +1,7 @@
 # FiniteBtnRelationShips
 
 <div class="alert alert-info part text-info">
-❔ FiniteBtnRelationShips was last modified in **v0.4.0**
+❔ FiniteBtnRelationShips was last modified in <b>0.4.0</b>
 </div>
 
 ```c

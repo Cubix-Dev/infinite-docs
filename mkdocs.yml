@@ -9,7 +9,7 @@ theme:
     custom_dir: mkdocs_bootswatch/infinite
     name: mkdocs
     highlightjs: true
-    hljs_style: atom-one-dark
+    hljs_style: tokyo-night-dark
 
 markdown_extensions:
     - footnotes

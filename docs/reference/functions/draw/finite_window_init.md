@@ -1,7 +1,7 @@
 # finite_window_init
 
 <div class="alert alert-info part text-info">
-❔ finite_window_init was last modified in **v0.6.0**
+❔ finite_window_init was last modified in <b>v0.6.0</b>
 </div>
 
 ```c
@@ -17,6 +17,8 @@ The `finite_window_init` function creates a new window with a given [`FiniteShel
 | ------------------------------ | -------------------------------------------------------------------------------------- |
 |`FiniteShell *shell`|The FiniteShell to create a window for.|
 
+## Code Example
+
 ```c 
 finite_window_init(myShell);
 
@@ -29,5 +31,5 @@ if (!myShell) {
 When creating a new application (NOT A POPUP), you **must** call this function. Although libfinite support custom implementations of some function, all libfinite functions that interact with the window expect a [`FiniteShell`](../../FiniteShell).
 
 ## Related Docs
-[`FiniteShell`](../../FiniteShell)<br>
-[`FiniteWindowInfo`](../../FiniteWindowInfo)
+[`FiniteShell`](../../../types/FiniteShell)<br>
+[`FiniteWindowInfo`](../../../types/FiniteWindowInfo)

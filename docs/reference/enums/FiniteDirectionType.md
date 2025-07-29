@@ -1,7 +1,7 @@
 # FiniteDirectionType
 
 <div class="alert alert-info part text-info">
-❔ FiniteDirectionType was last modified in **v0.4.0**
+❔ FiniteDirectionType was last modified in <b>0.4.0</b>
 </div>
 
 ```c
