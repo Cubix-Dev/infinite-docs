@@ -81,6 +81,6 @@ The Cubix Infinite uses Wayland as it's display server so in order to keep the F
 When creating an application in libfinite you'll need to call either `finite_window_init` or `finite_overlay_init` depending on what you're creating. For more information, see their corresponding pages.
 
 ## Related Docs
-[`finite_shell_init`]()<br>
-[`finite_window_init`]()<br>
-[`finite_overlay_init`]()<br>
+[`finite_shell_init`](../../functions/draw/finite_shell_init)<br>
+[`finite_window_init`](../../functions/draw/finite_window_init)<br>
+[`finite_overlay_init`](../../functions/draw/finite_overlay_init)<br>

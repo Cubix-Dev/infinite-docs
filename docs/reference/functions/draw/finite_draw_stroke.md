@@ -14,7 +14,7 @@ The `finite_draw_stroke` function attempts to draw a stroke around the latest re
 
 | Type                      | Decription                                            |
 | ------------------------- | ----------------------------------------------------- |
-| `FiniteShell *shell`      | The FiniteShell where the window to draw to is.       |
+| `FiniteShell *shell`      | The FiniteShell where the window  is.       |
 | `FiniteColorGroup *color` | A single [`FiniteColorGroup`](../../FiniteColorGroup) |
 | `cairo_pattern_t *pat`    | A single Cairo Pattern.                               |
 | `int width`               | The thickness of the stroke.                          |
@@ -49,7 +49,7 @@ If `shell.cr` is undefined, this function will **NOT** create a new Cairo draw t
 
 ## Standard Usage
 
-In order to use this function, you must have a valid `cairo_t` inside the [`FiniteShell`](../../../types/FiniteShell) (`shell.cr`). Strokes may only be applied onto a surface that has already been initialized.
+This function, you must have a valid `cairo_t` inside the [`FiniteShell`](../../../types/FiniteShell) (`shell.cr`). Strokes may only be applied onto a surface that has already been initialized.
 
 This function must have a valid [`FiniteShell`](../../../types/FiniteShell)
 

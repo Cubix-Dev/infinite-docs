@@ -40,9 +40,7 @@ meson setup build --prefix=/usr
 ninja -C build install
 ```
 
-## 🔥 Code Examples
-
-The repository contains several example projects that can help you get adjusted to the Infinite Library.
+Once you're ready to start building your first project head over to the [Getting Started documentation](../getting_started) to learm some basic tips and tricks on how to start using the Infinite Library.
 
 ## 📖 License
 

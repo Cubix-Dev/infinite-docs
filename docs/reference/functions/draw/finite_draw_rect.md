@@ -14,7 +14,7 @@ The `finite_draw_rect` function attempts to draw a regular rectangle onto a wind
 
 | Type                      | Decription                                                     |
 | ------------------------- | -------------------------------------------------------------- |
-| `FiniteShell *shell`      | The FiniteShell where the window to draw to is.                |
+| `FiniteShell *shell`      | The FiniteShell where the window  is.                |
 | `double x`                | The x position to draw the rectangle at.                       |
 | `double y`                | The y position to draw the rectangle at.                       |
 | `double width`            | The width of the rectangle.                                    |

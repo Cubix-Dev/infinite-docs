@@ -14,7 +14,7 @@ The `finite_draw_set_offset` function attempts to set an offset for future drawi
 
 | Type                 | Decription                                      |
 | -------------------- | ----------------------------------------------- |
-| `FiniteShell *shell` | The FiniteShell where the window to draw to is. |
+| `FiniteShell *shell` | The FiniteShell where the window  is. |
 | `double x`           | The X offset.                                   |
 | `double y`           | The Y offset.                                   |
 
