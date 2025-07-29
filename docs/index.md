@@ -1,4 +1,5 @@
 ![banner](BANNER.png)
+
 # Infinite SDK
 
 <div class="alert alert-info part text-info">
@@ -7,13 +8,11 @@
 
 Welcome to the Infinite Developer Family! I'm so glad you or your project manager has decided to bring your project to Infinite. This documenation page will provide some information on how to use the Infinite API and how to build an Infinite Compliant game.
 
-
 ## Project Goals
 
 The objective of Infinite Library is to create an abstractable, simple and lightweight development library for Infinite Game Developers that handles the complexities of interacting with the console behind simple, easy to understand functions while still giving developers freedom of choice to implement their own versions of these functions.
 
 As a developer, you can easily mix and match the implementation of features provided by the Infinite SDK and your own implementations to create a virtually seamless transition to the Infinite hardware.
-
 
 ## Getting Started
 
@@ -21,7 +20,7 @@ As a developer, you can easily mix and match the implementation of features prov
 ❓ The Infinite Library is intended to be used on a Linux based system.
 </div>
 
-###  Prerequisites
+### Prerequisites
 
 🔸 [cglm](https://github.com/recp/cglm) - A C based Graphics Math library<br>
 🔸 [Wayland](https://gitlab.freedesktop.org/wayland/wayland) - The window compositing protocol.<br>
@@ -45,9 +44,6 @@ ninja -C build install
 
 The repository contains several example projects that can help you get adjusted to the Infinite Library.
 
-
 ## 📖 License
 
 This project is intended to be open source to members of the Infinite Developer Environment. As a developer for Infinite Hardware you are free to edit, change or otherwise modify this project with the intention of contributing to the improve of the Infinte Developer tools. You may **not** however redistribute or resell any version of this project without the express written consent of Cubix Entertainment LLC.
-
-© Cubix Entertainment 2025. Cubi and the Cubix Logo are trademarks of Cubix Entertainment LLC.
