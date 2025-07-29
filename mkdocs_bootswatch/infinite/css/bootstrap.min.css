@@ -15,7 +15,7 @@
  * Homepage: https://cubixdev.org
  * Modified by Gabriel Thompson (gabriel.thomp@cubixdev.org)
  */
- @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -38,6 +38,7 @@
   --danger: #ee5f5b;
   --light: #e9ecef;
   --dark: #272b30;
+  --dark--blur: #272b3053 ;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -164,11 +165,12 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #d33f69;
+  color: #ed7538;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
+  transition: 1s;
   color: #d33f49;
   text-decoration: underline;
 }
@@ -5300,7 +5302,7 @@ a.badge-dark.focus {
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 0.25rem;
 }
 .alert-heading {
@@ -5353,9 +5355,10 @@ a.badge-dark.focus {
   color: #224422;
 }
 .alert-info {
-  color: #2f6473;
-  background-color: #def2f8;
-  border-color: #d1edf6;
+  background-color: #38bdf81a;
+  color: #38bdf8;
+  border-left-color: #0ea5e9;
+  border-left-width: 3px;
 }
 .alert-info hr {
   border-top-color: #bce5f2;
@@ -5365,8 +5368,9 @@ a.badge-dark.focus {
 }
 .alert-warning {
   color: #814d03;
-  background-color: #feeacd;
-  border-color: #fde1b9;
+  background-color: #feeacd1a;
+  border-color: #f59e0b;
+  border-left-width: 3px;
 }
 .alert-warning hr {
   border-top-color: #fcd6a0;
@@ -6019,12 +6023,11 @@ a.close.disabled {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
 .modal-header .close {
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 0 1rem;
   margin: -1rem -1rem -1rem auto;
 }
 .modal-title {
@@ -6036,7 +6039,7 @@ a.close.disabled {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
 }
 .modal-footer {
   display: -webkit-box;
@@ -6705,6 +6708,9 @@ a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #101214 !important;
+}
+.bg-dark-blur {
+  background-color: #171717a8 !important;
 }
 .bg-white {
   background-color: #fff !important;
@@ -9861,11 +9867,11 @@ a.text-success:focus {
   color: #3b9e3b !important;
 }
 .text-info {
-  color: #5bc0de !important;
+  color: #38bdf8 !important;
 }
 a.text-info:hover,
 a.text-info:focus {
-  color: #28a1c5 !important;
+  color: #5bc0de !important;
 }
 .text-warning {
   color: #f89406 !important;
@@ -10011,7 +10017,6 @@ a.text-dark:focus {
 }
 .navbar {
   border: 1px solid rgba(0, 0, 0, 0.6);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .navbar .container {
   padding: 0;
@@ -10622,7 +10627,6 @@ legend {
   text-decoration: none;
 }
 .alert {
-  border: none;
   color: #fff;
 }
 .alert a,
@@ -10639,11 +10643,8 @@ legend {
 .alert-success {
   background-color: #62c462;
 }
-.alert-info {
-  background-color: #5bc0de;
-}
 .alert-warning {
-  background-color: #f89406;
+  background-color: #feeacd1a;
 }
 .alert-danger {
   background-color: #ee5f5b;

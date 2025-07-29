@@ -20,11 +20,11 @@ requires-python = '>=3.5'
 dependencies = [
     'mkdocs>=1.1'
 ]
-
+s
 [project.urls]
-'Homepage' = 'http://mkdocs.github.io/mkdocs-bootswatch/'
-'Repository' = 'https://github.com/mkdocs/mkdocs-bootswatch'
-'Issue Tracker' = 'https://github.com/mkdocs/mkdocs-bootswatch/issues'
+'Homepage' = 'https://docs.cubixdev.org'
+'Repository' = 'https://github.com/Cubix-Dev/infinite-docs'
+'Issue Tracker' = 'https://github.com/Cubix-Dev/infinite-docs/issues'
 
 [project.entry-points.'mkdocs.themes']
 infinite = 'mkdocs_bootswatch.infinite'
