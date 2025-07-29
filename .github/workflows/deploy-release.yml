@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install mkdocs
-          python -m pip install pymdownx
+          python -m pip install pymdown-extensions 
       - name: Publish to GitHub Pages
         if: success()
         run: |
