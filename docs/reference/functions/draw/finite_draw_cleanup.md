@@ -5,7 +5,6 @@
 </div>
 
 ```c
-
 bool finite_draw_cleanup(FiniteShell *shell)
 ```
 
