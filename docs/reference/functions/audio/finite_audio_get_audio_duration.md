@@ -46,4 +46,5 @@ This function requires a valid [`FinitePlaybackDevice`](../../../types/FinitePla
 
 ## Related Docs
 
-[`FinitePlaybackDevice`](../../../types/FinitePlaybackDevice)
+[`FinitePlaybackDevice`](../../../types/FinitePlaybackDevice)<br>
+[`FinitePlaybackDuration`](../../../types/FinitePlaybackDuration)
