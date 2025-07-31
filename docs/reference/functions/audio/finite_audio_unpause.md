@@ -5,7 +5,7 @@
 </div>
 
 <div class="alert alert-warning part text-warning">
-❔  finite_audio_unpause is depricated as of <b>v0.6.0</b> and may be removed in future. Check the Notes section for more information.
+⚠  finite_audio_unpause is depricated as of <b>v0.6.0</b> and may be removed in future. Check the Notes section for more information.
 </div>
 
 ```c
