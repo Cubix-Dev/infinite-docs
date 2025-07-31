@@ -1,18 +1,18 @@
-# finite_key_valid
+# finite_key_from_string
 
 <div class="alert alert-info part text-info">
-❔ finite_key_valid was last modified in <b>v0.6.0</b>.
+❔ finite_key_from_string was last modified in <b>v0.6.0</b>.
 </div>
 
 ```c
-FiniteKeyboard *finite_key_valid(FiniteKey key)
+FiniteKey finite_key_from_string(const char *name)
 ```
 
-The `finite_key_valid` verifies if a given [`FiniteKey`](../../../types/FiniteKey) is a valid FiniteKey.
+The `finite_key_from_string` creates a [`FiniteKey`](../../../types/FiniteKey) from a given string
 
-| Type            | Decription                                       |
-| --------------- | ------------------------------------------------ |
-| `FiniteKey key` | The [`FiniteKey`](../../../types/FiniteKey) to validate. |
+| Type               | Decription                                     |
+| ------------------ | ---------------------------------------------- |
+| `const char *name` | The name of the key to create a FiniteKey for. |
 
 ## Code Example
 
@@ -41,10 +41,10 @@ while (wl_display_dispatch_pending(myShell->display) != -1) {
 
 ## Standard Usage
 
-When creating a new FiniteKey with a function such as [`finite_key_from_string`](../finite_key_from_string) you should **ALWAYS** call this function afterword to avoid unexpected errors, undefined behavior or missed key events.
+When calling this function you should **ALWAYS** call [`finite_key_valid`](../finite_key_valid) afterword to avoid unexpected errors, undefined behavior or missed key events.
 
 ## Related Docs
 
-[`finite_key_from_string`](../finite_key_from_string)<br>
+[`finite_key_valid`](../finite_key_valid)<br>
 [`finite_input_keyboard_init`](../finite_input_keyboard_init)<br>
 [`FiniteKeyboard`](../../../types/FiniteKeyboard)
