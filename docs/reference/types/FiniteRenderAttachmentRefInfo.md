@@ -5,16 +5,12 @@
 </div>
 
 ```c
-typedef struct FiniteRenderAttachmentRefInfo  FiniteRenderAttachmentRefInfo
-:;
-
+typedef struct FiniteRenderAttachmentRefInfo  FiniteRenderAttachmentRefInfo;
 struct FiniteRenderAttachmentRefInfo {
     uint32_t _attachment;
     VkImageLayout layout;
     FiniteAttachmentDescriptor type;
 };
-
-
 ```
 
 The `FiniteRenderAttachmentRefInfo` struct param information for creating a VkAttachmenReference.
