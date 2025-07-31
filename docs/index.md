@@ -1,4 +1,4 @@
-![banner](BANNER.png)
+![banner](BANNER.jpg)
 
 # Infinite SDK
 

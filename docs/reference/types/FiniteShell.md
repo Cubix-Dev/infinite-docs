@@ -37,7 +37,6 @@ struct FiniteShell{
 
 The `FiniteShell` struct stores general information about a window.
 
-
 ## Properties
 
 | Type                           | Decription                                                                             |

@@ -4809,7 +4809,7 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
-  word-wrap: break-word;
+  word-wrap: anywhere;
   background-color: #32383e;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.6);
