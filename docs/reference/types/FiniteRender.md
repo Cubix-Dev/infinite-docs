@@ -10,7 +10,7 @@
 struct FiniteRender {
     FiniteShell *shell;
     char **required_layers;
-    char **required_extensions;  // required instance level extensions
+    char **required_extensions;
     char **required_deviceExtensions;
     uint32_t _images;
     uint32_t _layers;
@@ -19,7 +19,7 @@ struct FiniteRender {
     uint32_t _modules;
     uint32_t _signals;
     uint32_t _fences;
-    uint32_t _buffers; // will rename but refers to the FiniteRenderBuffers
+    uint32_t _buffers;
     uint32_t _vertexBufferSize;
     uint32_t _currentFrame;
 
