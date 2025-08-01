@@ -5,55 +5,51 @@
 </div>
 
 ```c
-FiniteRender *finite_render_init(FiniteShell *shell, char **extensions, char **layers, uint32_t _exts, uint32_t _layers
+FiniteRender *finite_render_init(FiniteShell *shell, char **extensions, char **layers, uint32_t _exts, uint32_t _layers);
 ```
 
-The `finite_render_init` attempts to get shader code and convert it into bytes.
+Creates a Vulkan instance and surface using the provided shell and configuration data.
 
 # Parameters
 
-| Type                 | Decription                                                                           |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| `FiniteShell *shell` | The [`FiniteShell`](../../../types/FiniteShell) to be linked to the Render instance. |
-| `char **extensions`  | An array of Instance level extension strings.                                        |
-| `char **layers`      | An array of extension layer strings.                                                 |
-| `_exts`              | The number of items in the extensions array                                          |
-| `_layers`            | The number of items in extension layer string                                        |
+| Type                        | Description                                                                                         |
+| ---------------------------| --------------------------------------------------------------------------------------------------- |
+| `FiniteShell *shell`       | Shell that holds the surface and display needed for surface creation.                              |
+| `char **extensions`        | Optional array of Vulkan instance extensions to enable.                                             |
+| `char **layers`            | Optional array of Vulkan validation layers to enable.                                               |
+| `uint32_t _exts`           | Number of Vulkan instance extensions in the extensions array.                                       |
+| `uint32_t _layers`         | Number of Vulkan validation layers in the layers array.                                             |
 
 ## Code Example
 
 ```c
-#include <finite/render.h>
 #include <finite/log.h>
+#include <finite/render.h>
 
-// load shaders
-uint32_t vertSize;
-char *vertCode = finite_render_get_shader_code("vert.spv", &vertSize);
-bool success = finite_render_get_shader_module(render, vertCode, vertSize);
+FiniteShell *shell = finite_shell_init("wayland-0");
 
-if (!success) {
-    FINITE_LOG_ERROR("Unable to create Vertex Shader Module");
-    return -1;
-}
+char *extensions[] = {
+    VK_KHR_SURFACE_EXTENSION_NAME,
+    VK_EXT_DEBUG_UTILS_EXTENSION_NAME,
+    VK_KHR_WAYLAND_SURFACE_EXTENSION_NAME
+};
+char *layers[] = {
+    "VK_LAYER_KHRONOS_validation"
+};
 
-uint32_t fragSize;
-char *fragCode = finite_render_get_shader_code("frag.spv", &fragSize);
-success = finite_render_get_shader_module(render, fragCode, fragSize);
-
-if (!success) {
-    FINITE_LOG_ERROR("Unable to create Fragment Shader Module");
-    return -1;
-}
+FiniteRender *render = finite_render_init(shell, extensions, layers, 3, 1);
 ```
-
-## Notes
-
-`finite_render_init` requires precompiled shaders in order to work.
 
 ## Standard Usage
 
-This function requires you to get the shader's file size.
+This function must have a valid [`FiniteShell`](../../../types/FiniteShell).
+
+Call this function after creating a shell. It sets up the Vulkan instance and prepares a surface for rendering.
+
+```c
+FiniteShell *shell = finite_shell_init("wayland-0");
+FiniteRender *render = finite_render_init(shell, NULL, NULL, 0, 0);
+```
 
 ## Related Docs
-
-[`FiniteShaderType`](../../enums/FiniteShaderType.md)
+[`finite_render_create_physical_device`](../finite_render_create_physical_device)

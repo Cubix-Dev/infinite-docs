@@ -13,7 +13,7 @@ struct FiniteRenderAttachmentRefInfo {
 };
 ```
 
-The `FiniteRenderAttachmentRefInfo` struct param information for creating a VkAttachmenReference.
+The `FiniteRenderAttachmentRefInfo` struct contains param information for creating a VkAttachmenReference.
 
 ## Properties
 
