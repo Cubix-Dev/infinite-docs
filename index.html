@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cubix Infinite Developer Documentation">
+        <meta name="image" content="https://docs.cubixdev.org/BANNER.png">
+        <meta name="author" content="Cubix Entertainment">
+        <link rel="canonical" href="https://docs.cubixdev.org/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Infinite Developer Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/tokyo-night-dark.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Libfinite</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a href="." class="nav-link active" aria-current="page">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="getting_started/" class="nav-link">Getting Started</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Examples</a>
+                                    <ul class="dropdown-menu">
+                                        
+<li>
+    <a href="examples/audio/" class="dropdown-item">Audio</a>
+</li>
+                                        
+<li>
+    <a href="examples/cube/" class="dropdown-item">Cube</a>
+</li>
+                                        
+<li>
+    <a href="examples/draw/" class="dropdown-item">Draw</a>
+</li>
+                                        
+<li>
+    <a href="examples/render/" class="dropdown-item">Render</a>
+</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                    <ul class="dropdown-menu">
+                                        
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Enums</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="reference/enums/FiniteDirectionType/" class="dropdown-item">FiniteDirectionType</a>
+</li>
+            
+<li>
+    <a href="reference/enums/FiniteKey/" class="dropdown-item">FiniteKey</a>
+</li>
+            
+<li>
+    <a href="reference/enums/FiniteShaderType/" class="dropdown-item">FiniteShaderType</a>
+</li>
+    </ul>
+  </li>
+                                        
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Functions</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Audio</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_cleanup/" class="dropdown-item">finite_audio_cleanup</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_device_init/" class="dropdown-item">finite_audio_device_init</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_get_audio_duration/" class="dropdown-item">finite_audio_get_audio_duration</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_get_audio_params/" class="dropdown-item">finite_audio_get_audio_params</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_init_audio/" class="dropdown-item">finite_audio_init_audio</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_pause/" class="dropdown-item">finite_audio_pause</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_play/" class="dropdown-item">finite_audio_play</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_stop/" class="dropdown-item">finite_audio_stop</a>
+</li>
+            
+<li>
+    <a href="reference/functions/audio/finite_audio_unpause/" class="dropdown-item">finite_audio_unpause</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Draw</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_cleanup/" class="dropdown-item">finite_draw_cleanup</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_create_snapshot/" class="dropdown-item">finite_draw_create_snapshot</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_finish/" class="dropdown-item">finite_draw_finish</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_get_font_extents/" class="dropdown-item">finite_draw_get_font_extents</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_get_text_extents/" class="dropdown-item">finite_draw_get_text_extents</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_load_snapshot/" class="dropdown-item">finite_draw_load_snapshot</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_pattern_linear/" class="dropdown-item">finite_draw_text_group</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_png/" class="dropdown-item">finite_draw_png</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_rect/" class="dropdown-item">finite_draw_rect</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_rounded_rect/" class="dropdown-item">finite_draw_rounded_rect</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_set_draw_position/" class="dropdown-item">finite_draw_set_draw_position</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_set_font/" class="dropdown-item">finite_draw_set_font</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_set_offset/" class="dropdown-item">finite_draw_set_offset</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_set_text/" class="dropdown-item">finite_draw_set_text</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_stroke/" class="dropdown-item">finite_draw_stroke</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_draw_text_group/" class="dropdown-item">finite_draw_text_group</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_overlay_init/" class="dropdown-item">finite_overlay_init</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_shell_init/" class="dropdown-item">finite_shell_init</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_window_init/" class="dropdown-item">finite_window_init</a>
+</li>
+            
+<li>
+    <a href="reference/functions/draw/finite_window_size_set/" class="dropdown-item">finite_window_size_set</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Input</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="reference/functions/input/finite_input_keyboard_init/" class="dropdown-item">finite_input_keyboard_init</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_input_poll_keys/" class="dropdown-item">finite_input_poll_keys</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_key_down/" class="dropdown-item">finite_key_down</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_key_from_string/" class="dropdown-item">finite_key_from_string</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_key_pressed/" class="dropdown-item">finite_key_pressed</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_key_string_from_key/" class="dropdown-item">finite_key_string_from_key</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_key_up/" class="dropdown-item">finite_key_up</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_key_valid/" class="dropdown-item">finite_key_valid</a>
+</li>
+            
+<li>
+    <a href="reference/functions/input/finite_keyboard_destroy/" class="dropdown-item">finite_keyboard_destroy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Render</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="reference/functions/render/" class="dropdown-item">Render</a>
+</li>
+            
+<li>
+    <a href="reference/functions/render/finite_render_create_device/" class="dropdown-item">finite_render_create_device</a>
+</li>
+            
+<li>
+    <a href="reference/functions/render/finite_render_create_example_render_pass/" class="dropdown-item">finite_render_create_example_render_pass</a>
+</li>
+            
+<li>
+    <a href="reference/functions/render/finite_render_create_physical_device/" class="dropdown-item">finite_render_create_physical_device</a>
+</li>
+            
+<li>
+    <a href="reference/functions/render/finite_render_create_swapchain/" class="dropdown-item">finite_render_create_swapchain</a>
+</li>
+            
+<li>
+    <a href="reference/functions/render/finite_render_create_swapchain_images/" class="dropdown-item">finite_render_create_swapchain_images</a>
+</li>
+            
+<li>
+    <a href="reference/functions/render/finite_render_get_shader_code/" class="dropdown-item">finite_render_get_shader_code</a>
+</li>
+            
+<li>
+    <a href="reference/functions/render/finite_render_init/" class="dropdown-item">finite_render_init</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                        
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Types</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="reference/types/FiniteBtn/" class="dropdown-item">FiniteBtn</a>
+</li>
+            
+<li>
+    <a href="reference/types/FiniteBtnRelationShips/" class="dropdown-item">FiniteBtnRelationShips</a>
+</li>
+            
+<li>
+    <a href="reference/types/FiniteKeyState/" class="dropdown-item">FiniteKeyState</a>
+</li>
+            
+<li>
+    <a href="reference/types/FiniteKeyboard/" class="dropdown-item">FiniteKeyboard</a>
+</li>
+            
+<li>
+    <a href="reference/types/FinitePlaybackDevice/" class="dropdown-item">FinitePlaybackDevice</a>
+</li>
+            
+<li>
+    <a href="reference/types/FinitePlaybackDuration/" class="dropdown-item">FinitePlaybackDuration</a>
+</li>
+            
+<li>
+    <a href="reference/types/FiniteShell/" class="dropdown-item">FiniteShell</a>
+</li>
+            
+<li>
+    <a href="reference/types/FiniteTextGroup/" class="dropdown-item">FiniteTextGroup</a>
+</li>
+            
+<li>
+    <a href="reference/types/FiniteWindowInfo/" class="dropdown-item">FiniteWindowInfo</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Render</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="reference/types/render/FiniteRender/" class="dropdown-item">FiniteRender</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderAttachmentDescriptionInfo/" class="dropdown-item">FiniteRenderAttachmentDescriptionInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderAttachmentRefInfo/" class="dropdown-item">FiniteRenderAttachmentRefInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderFramebufferInfo/" class="dropdown-item">FiniteRenderFramebufferInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderPassInfo/" class="dropdown-item">FiniteRenderRenderPassInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderPipelineLayoutInfo/" class="dropdown-item">FiniteRenderPipelineLayoutInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderQueueFamily/" class="dropdown-item">FiniteRenderQueueFamilies</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderShaderStageInfo/" class="dropdown-item">FiniteRenderShaderStageInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderShaderStages/" class="dropdown-item">FiniteRenderShaderStages</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderSubpassDependencyInfo/" class="dropdown-item">FiniteRenderSubpassDependencyInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderSubpassDescriptionInfo/" class="dropdown-item">FiniteRenderSubpassDescriptionInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderSwapchainInfo/" class="dropdown-item">FiniteRenderSwapchainInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderVertexInputInfo/" class="dropdown-item">FiniteRenderVertexInputInfo</a>
+</li>
+            
+<li>
+    <a href="reference/types/render/FiniteRenderViewportState/" class="dropdown-item">FiniteRenderViewportState</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    </ul>
+                                </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                      <li class="nav-item">
+                          <a href="https://github.com/Cubix-Dev/infinite-docs" class="nav-link">
+                            <i class="fa-brands fa-github"></i> Edit on Github
+                          </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#infinite-sdk" class="nav-link">Infinite SDK</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#project-goals" class="nav-link">Project Goals</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#getting-started" class="nav-link">Getting Started</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">📖 License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><img alt="banner" src="BANNER.jpg" /></p>
+<h1 id="infinite-sdk">Infinite SDK<a class="headerlink" href="#infinite-sdk" title="Permanent link">*</a></h1>
+<div class="alert alert-info part text-info">
+❓ Documentation for <b>v0.6.0</b>
+</div>
+
+<p>Welcome to the Infinite Developer Family! I'm so glad you or your project manager has decided to bring your project to Infinite. This documenation page will provide some information on how to use the Infinite API and how to build an Infinite Compliant game.</p>
+<h2 id="project-goals">Project Goals<a class="headerlink" href="#project-goals" title="Permanent link">*</a></h2>
+<p>The objective of Infinite Library is to create an abstractable, simple and lightweight development library for Infinite Game Developers that handles the complexities of interacting with the console behind simple, easy to understand functions while still giving developers freedom of choice to implement their own versions of these functions.</p>
+<p>As a developer, you can easily mix and match the implementation of features provided by the Infinite SDK and your own implementations to create a virtually seamless transition to the Infinite hardware.</p>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">*</a></h2>
+<div class="alert alert-info part text-info">
+❓ The Infinite Library is intended to be used on a Linux based system.
+</div>
+
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">*</a></h3>
+<p>🔸 <a href="https://github.com/recp/cglm">cglm</a> - A C based Graphics Math library<br>
+🔸 <a href="https://gitlab.freedesktop.org/wayland/wayland">Wayland</a> - The window compositing protocol.<br>
+🔸 <a href="https://gitlab.freedesktop.org/wayland/wayland-protocols">Wayland Protocols</a> - Additional Non Standard features for Wayland. (v1.24 or higher)<br>
+🔸 <a href="https://cairographics.org/">Cairo</a> - Graphics Library for drawing data to buffers.<br>
+🔸 <a href="https://github.com/KhronosGroup/Vulkan-Loader/">Vulkan</a> - An explicit graphical libary that gives users the full control over the rendering process.<br>
+🔸 <a href="https://github.com/xkbcommon/libxkbcommon">xkbcommon</a> - Keymap library.<br>
+🔸 <a href="https://www.freedesktop.org/wiki/Software/libevdev/">libevdev</a> - evdev device library<br>
+🔸 <a href="https://github.com/libsndfile/libsndfile">sndfile</a> - C library for reading and writing audio data<br>
+🔸 <a href="https://www.alsa-project.org/wiki/Main_Page">ALSA</a> - The Advanced Linux Sound Architecture<br>
+🔸 <a href="https://github.com/mesonbuild/meson">Meson</a> - The Meson Build System</p>
+<h3 id="building">🚧 Building<a class="headerlink" href="#building" title="Permanent link">*</a></h3>
+<pre class="highlight"><code class="language-bash">meson setup build --prefix=/usr
+sudo ninja -C build install</code></pre>
+<p>Once you're ready to start building your first project head over to the <a href="../getting_started">Getting Started documentation</a> to learm some basic tips and tricks on how to start using the Infinite Library.</p>
+<h2 id="license">📖 License<a class="headerlink" href="#license" title="Permanent link">*</a></h2>
+<p>This project is intended to be open source to members of the Infinite Developer Environment. As a developer for Infinite Hardware you are free to edit, change or otherwise modify this project with the intention of contributing to the improve of the Infinte Developer tools. You may <strong>not</strong> however redistribute or resell any version of this project without the express written consent of Cubix Entertainment LLC.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2025 Cubix Entertainment LLC | All rights reserved. <br>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, <a href="http://www.dougalmatthews.com/">Dougal Matthews</a>.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal bg-dark-blur" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn border-0" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-08-02 02:06:09.147883+00:00
+-->

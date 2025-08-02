@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="image" content="https://docs.cubixdev.org/BANNER.png">
+        <meta name="author" content="Cubix Entertainment">
+        <link rel="canonical" href="https://docs.cubixdev.org/reference/types/render/FiniteRender/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>FiniteRender - Infinite Developer Docs</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/tokyo-night-dark.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Libfinite</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a href="../../../.." class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../../../../getting_started/" class="nav-link">Getting Started</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Examples</a>
+                                    <ul class="dropdown-menu">
+                                        
+<li>
+    <a href="../../../../examples/audio/" class="dropdown-item">Audio</a>
+</li>
+                                        
+<li>
+    <a href="../../../../examples/cube/" class="dropdown-item">Cube</a>
+</li>
+                                        
+<li>
+    <a href="../../../../examples/draw/" class="dropdown-item">Draw</a>
+</li>
+                                        
+<li>
+    <a href="../../../../examples/render/" class="dropdown-item">Render</a>
+</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Reference</a>
+                                    <ul class="dropdown-menu">
+                                        
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Enums</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../enums/FiniteDirectionType/" class="dropdown-item">FiniteDirectionType</a>
+</li>
+            
+<li>
+    <a href="../../../enums/FiniteKey/" class="dropdown-item">FiniteKey</a>
+</li>
+            
+<li>
+    <a href="../../../enums/FiniteShaderType/" class="dropdown-item">FiniteShaderType</a>
+</li>
+    </ul>
+  </li>
+                                        
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Functions</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Audio</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_cleanup/" class="dropdown-item">finite_audio_cleanup</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_device_init/" class="dropdown-item">finite_audio_device_init</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_get_audio_duration/" class="dropdown-item">finite_audio_get_audio_duration</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_get_audio_params/" class="dropdown-item">finite_audio_get_audio_params</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_init_audio/" class="dropdown-item">finite_audio_init_audio</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_pause/" class="dropdown-item">finite_audio_pause</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_play/" class="dropdown-item">finite_audio_play</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_stop/" class="dropdown-item">finite_audio_stop</a>
+</li>
+            
+<li>
+    <a href="../../../functions/audio/finite_audio_unpause/" class="dropdown-item">finite_audio_unpause</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Draw</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_cleanup/" class="dropdown-item">finite_draw_cleanup</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_create_snapshot/" class="dropdown-item">finite_draw_create_snapshot</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_finish/" class="dropdown-item">finite_draw_finish</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_get_font_extents/" class="dropdown-item">finite_draw_get_font_extents</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_get_text_extents/" class="dropdown-item">finite_draw_get_text_extents</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_load_snapshot/" class="dropdown-item">finite_draw_load_snapshot</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_pattern_linear/" class="dropdown-item">finite_draw_text_group</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_png/" class="dropdown-item">finite_draw_png</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_rect/" class="dropdown-item">finite_draw_rect</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_rounded_rect/" class="dropdown-item">finite_draw_rounded_rect</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_set_draw_position/" class="dropdown-item">finite_draw_set_draw_position</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_set_font/" class="dropdown-item">finite_draw_set_font</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_set_offset/" class="dropdown-item">finite_draw_set_offset</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_set_text/" class="dropdown-item">finite_draw_set_text</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_stroke/" class="dropdown-item">finite_draw_stroke</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_draw_text_group/" class="dropdown-item">finite_draw_text_group</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_overlay_init/" class="dropdown-item">finite_overlay_init</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_shell_init/" class="dropdown-item">finite_shell_init</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_window_init/" class="dropdown-item">finite_window_init</a>
+</li>
+            
+<li>
+    <a href="../../../functions/draw/finite_window_size_set/" class="dropdown-item">finite_window_size_set</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Input</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../functions/input/finite_input_keyboard_init/" class="dropdown-item">finite_input_keyboard_init</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_input_poll_keys/" class="dropdown-item">finite_input_poll_keys</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_key_down/" class="dropdown-item">finite_key_down</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_key_from_string/" class="dropdown-item">finite_key_from_string</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_key_pressed/" class="dropdown-item">finite_key_pressed</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_key_string_from_key/" class="dropdown-item">finite_key_string_from_key</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_key_up/" class="dropdown-item">finite_key_up</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_key_valid/" class="dropdown-item">finite_key_valid</a>
+</li>
+            
+<li>
+    <a href="../../../functions/input/finite_keyboard_destroy/" class="dropdown-item">finite_keyboard_destroy</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Render</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../functions/render/" class="dropdown-item">Render</a>
+</li>
+            
+<li>
+    <a href="../../../functions/render/finite_render_create_device/" class="dropdown-item">finite_render_create_device</a>
+</li>
+            
+<li>
+    <a href="../../../functions/render/finite_render_create_example_render_pass/" class="dropdown-item">finite_render_create_example_render_pass</a>
+</li>
+            
+<li>
+    <a href="../../../functions/render/finite_render_create_physical_device/" class="dropdown-item">finite_render_create_physical_device</a>
+</li>
+            
+<li>
+    <a href="../../../functions/render/finite_render_create_swapchain/" class="dropdown-item">finite_render_create_swapchain</a>
+</li>
+            
+<li>
+    <a href="../../../functions/render/finite_render_create_swapchain_images/" class="dropdown-item">finite_render_create_swapchain_images</a>
+</li>
+            
+<li>
+    <a href="../../../functions/render/finite_render_get_shader_code/" class="dropdown-item">finite_render_get_shader_code</a>
+</li>
+            
+<li>
+    <a href="../../../functions/render/finite_render_init/" class="dropdown-item">finite_render_init</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                        
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Types</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../FiniteBtn/" class="dropdown-item">FiniteBtn</a>
+</li>
+            
+<li>
+    <a href="../../FiniteBtnRelationShips/" class="dropdown-item">FiniteBtnRelationShips</a>
+</li>
+            
+<li>
+    <a href="../../FiniteKeyState/" class="dropdown-item">FiniteKeyState</a>
+</li>
+            
+<li>
+    <a href="../../FiniteKeyboard/" class="dropdown-item">FiniteKeyboard</a>
+</li>
+            
+<li>
+    <a href="../../FinitePlaybackDevice/" class="dropdown-item">FinitePlaybackDevice</a>
+</li>
+            
+<li>
+    <a href="../../FinitePlaybackDuration/" class="dropdown-item">FinitePlaybackDuration</a>
+</li>
+            
+<li>
+    <a href="../../FiniteShell/" class="dropdown-item">FiniteShell</a>
+</li>
+            
+<li>
+    <a href="../../FiniteTextGroup/" class="dropdown-item">FiniteTextGroup</a>
+</li>
+            
+<li>
+    <a href="../../FiniteWindowInfo/" class="dropdown-item">FiniteWindowInfo</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Render</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">FiniteRender</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderAttachmentDescriptionInfo/" class="dropdown-item">FiniteRenderAttachmentDescriptionInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderAttachmentRefInfo/" class="dropdown-item">FiniteRenderAttachmentRefInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderFramebufferInfo/" class="dropdown-item">FiniteRenderFramebufferInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderPassInfo/" class="dropdown-item">FiniteRenderRenderPassInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderPipelineLayoutInfo/" class="dropdown-item">FiniteRenderPipelineLayoutInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderQueueFamily/" class="dropdown-item">FiniteRenderQueueFamilies</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderShaderStageInfo/" class="dropdown-item">FiniteRenderShaderStageInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderShaderStages/" class="dropdown-item">FiniteRenderShaderStages</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderSubpassDependencyInfo/" class="dropdown-item">FiniteRenderSubpassDependencyInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderSubpassDescriptionInfo/" class="dropdown-item">FiniteRenderSubpassDescriptionInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderSwapchainInfo/" class="dropdown-item">FiniteRenderSwapchainInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderVertexInputInfo/" class="dropdown-item">FiniteRenderVertexInputInfo</a>
+</li>
+            
+<li>
+    <a href="../FiniteRenderViewportState/" class="dropdown-item">FiniteRenderViewportState</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    </ul>
+                                </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                      <li class="nav-item">
+                          <a href="https://github.com/Cubix-Dev/infinite-docs" class="nav-link">
+                            <i class="fa-brands fa-github"></i> Edit on Github
+                          </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#finiterender" class="nav-link">FiniteRender</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#properties" class="nav-link">Properties</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#notes" class="nav-link">Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#swaitandard-usage" class="nav-link">Swaitandard Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#related-docs" class="nav-link">Related Docs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="finiterender">FiniteRender<a class="headerlink" href="#finiterender" title="Permanent link">*</a></h1>
+<div class="alert alert-info part text-info">
+❔  FiniteRender was last modified in <b>v0.6.0</b>.
+</div>
+
+<pre class="highlight"><code class="language-c">#define MAX_FRAMES_IN_FLIGHT 2
+
+struct FiniteRender {
+    FiniteShell *shell;
+    char **required_layers;
+    char **required_extensions;
+    char **required_deviceExtensions;
+    uint32_t _images;
+    uint32_t _layers;
+    uint32_t _exts;
+    uint32_t _devExts;
+    uint32_t _modules;
+    uint32_t _signals;
+    uint32_t _fences;
+    uint32_t _buffers;
+    uint32_t _vertexBufferSize;
+    uint32_t _currentFrame;
+
+    bool withDepth;
+
+    FiniteRenderShaderStages stages;
+
+    VkInstance vk_instance;
+    VkPhysicalDevice vk_pDevice;
+    VkDevice vk_device;
+    VkSurfaceKHR vk_surface;
+    VkQueue vk_graphicsQueue;
+    VkQueue vk_presentQueue;
+
+    VkSwapchainKHR vk_swapchain;
+
+    VkImage *vk_image;
+    VkSurfaceFormatKHR vk_imageForm;
+    VkPresentModeKHR mode;
+    VkExtent2D vk_extent;
+    VkImageView *vk_view;
+    VkPipelineLayout vk_layout;
+    VkRenderPass vk_renderPass;
+    VkPipeline vk_pipeline;
+    VkShaderModule *modules; // array of shader modules
+    VkFramebuffer *vk_frameBufs;
+    VkCommandPool vk_pool;
+    VkCommandBuffer *vk_buffer;
+
+    FiniteRenderBuffer *buffers;
+    VkBuffer vk_vertexBuf;
+    VkBuffer *vk_uniformBuf;
+    VkDeviceMemory vk_memory;
+    VkDeviceMemory *vk_uniformMemory;
+    VkDescriptorSetLayout vk_descriptorLayout;
+    VkDescriptorSet *vk_descriptor;
+    void **uniformData;
+
+    VkDescriptorPool vk_descPool;
+
+    VkSemaphore *signals;
+    VkFence *fences;
+};
+</code></pre>
+<p>The <code>FiniteRender</code> struct refers to a single Vulkan instance.</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">*</a></h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Decription</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FiniteShell *shell</code></td>
+<td>The <code>FiniteShell</code> to attach the Vulkan instance to</td>
+</tr>
+<tr>
+<td><code>char **required_layers</code></td>
+<td>An array of extension layers (usually just validation which is on by default)</td>
+</tr>
+<tr>
+<td><code>char **required_extensions</code></td>
+<td>An array of Instance level extensions</td>
+</tr>
+<tr>
+<td><code>char **required_deviceExtensions</code></td>
+<td>An array of Device level extensions.</td>
+</tr>
+<tr>
+<td><code>uint32_t _images</code></td>
+<td>The number of Swapchain Images</td>
+</tr>
+<tr>
+<td><code>uint32_t _layers</code></td>
+<td>The number of extension layers</td>
+</tr>
+<tr>
+<td><code>uint32_t _exts</code></td>
+<td>The number of instance level extensions</td>
+</tr>
+<tr>
+<td><code>uint32_t _devExts</code></td>
+<td>The number of device level extensions</td>
+</tr>
+<tr>
+<td><code>uint32_t _modules</code></td>
+<td>The number of shader modules</td>
+</tr>
+<tr>
+<td><code>uint32_t _signals</code></td>
+<td>The number of Semaphores (signals)</td>
+</tr>
+<tr>
+<td><code>uint32_t _fences</code></td>
+<td>The number of fences</td>
+</tr>
+<tr>
+<td><code>uint32_t _buffers</code></td>
+<td>The number of FiniteRenderBuffers</td>
+</tr>
+<tr>
+<td><code>uint32_t _vertexBufferSize</code></td>
+<td>Unused</td>
+</tr>
+<tr>
+<td><code>uint32_t _currentFrame</code></td>
+<td>The current Frame In Flight.</td>
+</tr>
+<tr>
+<td><code>bool withDepth</code></td>
+<td>Whether to use the v0.6.0 depth layer features.</td>
+</tr>
+<tr>
+<td><code>FiniteRenderShaderStages stages</code></td>
+<td>The <code>FiniteRenderShaderStages</code> for the Vulkan Instance</td>
+</tr>
+<tr>
+<td><code>VkInstance vk_instance</code></td>
+<td>The Vulkan Instance struct</td>
+</tr>
+<tr>
+<td><code>VkPhysicalDevice vk_pDevice</code></td>
+<td>The Physical Device for the Render instance</td>
+</tr>
+<tr>
+<td><code>VkDevice vk_device</code></td>
+<td>The logical device for the render instance</td>
+</tr>
+<tr>
+<td><code>VkSurfaceKHR vk_surface</code></td>
+<td>The Vulkan Surface for the render instance.</td>
+</tr>
+<tr>
+<td><code>VkQueue vk_graphicsQueue</code></td>
+<td>The Graphics Queue for the render instance</td>
+</tr>
+<tr>
+<td><code>VkQueue vk_presentQueue</code></td>
+<td>The Presentation Queue for the render instance</td>
+</tr>
+<tr>
+<td><code>VkSwapchainKHR vk_swapchain</code></td>
+<td>The Swapchain for the render instance</td>
+</tr>
+<tr>
+<td><code>VkImage *vk_image</code></td>
+<td>An array of VkImages for the Render Instance</td>
+</tr>
+<tr>
+<td><code>VkSurfaceFormatKHR vk_imageForm</code></td>
+<td>The Image Format for the render instance</td>
+</tr>
+<tr>
+<td><code>VkPresentModeKHR mode</code></td>
+<td>The <a href="https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentModeKHR.html">PresentMode</a> of the Window. Defaults to FIFO</td>
+</tr>
+<tr>
+<td><code>VkExtent2D vk_extent</code></td>
+<td>The window scale. The value should be retrived from the FiniteShell.</td>
+</tr>
+<tr>
+<td><code>VkImageView *vk_view</code></td>
+<td>An array of VkImageViews for the render instance.</td>
+</tr>
+<tr>
+<td><code>VkPipelineLayout vk_layout</code></td>
+<td>The pipeline layout for the vk_pipeline.</td>
+</tr>
+<tr>
+<td><code>VkRenderPass vk_renderPass</code></td>
+<td>The render pass for the render instance.</td>
+</tr>
+<tr>
+<td><code>VkPipeline vk_pipeline</code></td>
+<td>The Graphics Pipeline for the render instance.</td>
+</tr>
+<tr>
+<td><code>VkShaderModule *modules</code></td>
+<td>An array of shader modules</td>
+</tr>
+<tr>
+<td><code>VkFramebuffer *vk_frameBufs</code></td>
+<td>An array of Framebuffers</td>
+</tr>
+<tr>
+<td><code>VkCommandPool vk_pool</code></td>
+<td>The <strong>MAIN</strong> command pool used by the render instance.</td>
+</tr>
+<tr>
+<td><code>VkCommandBuffer *vk_buffer;</code></td>
+<td>The Command buffer created from the vk_pool</td>
+</tr>
+<tr>
+<td><code>FiniteRenderBuffer *buffers</code></td>
+<td>An array of VkBuffer details</td>
+</tr>
+<tr>
+<td><code>VkBuffer vk_vertexBuf</code></td>
+<td>A set of VkBuffers for drawing vertexes.</td>
+</tr>
+<tr>
+<td><code>VkBuffer *vk_uniformBuf</code></td>
+<td>An array of VkBuffers for Uniform buffers</td>
+</tr>
+<tr>
+<td><code>VkDeviceMemory vk_memory</code></td>
+<td>A set of VkDeviceMemory for storing info related to drawing vertexes</td>
+</tr>
+<tr>
+<td><code>VkDeviceMemory *vk_uniformMemory</code></td>
+<td>An array of VkDeviceMemory for storing info related to memory buffers</td>
+</tr>
+<tr>
+<td><code>VkDescriptorSetLayout vk_descriptorLayout</code></td>
+<td>A VkDescriptorSetLayout for the render instance</td>
+</tr>
+<tr>
+<td><code>VkDescriptorSet *vk_descriptor</code></td>
+<td>An array of VkDescriptorSets for the render instance</td>
+</tr>
+<tr>
+<td><code>void **uniformData</code></td>
+<td>Data about the uniform buffers used to render them</td>
+</tr>
+<tr>
+<td><code>VkDescriptorPool vk_descPool</code></td>
+<td>The descriptor pool for the render instance</td>
+</tr>
+<tr>
+<td><code>VkSemaphore *signals</code></td>
+<td>An array of Semaphores (signals)</td>
+</tr>
+<tr>
+<td><code>VkFence *fences</code></td>
+<td>An array of VkFences</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">*</a></h2>
+<p>The vk_surface in <code>FiniteRender</code> should be attached to a Wayland Surface (not an xdg_surface).</p>
+<p>The vk_graphicsQueue and vk_presentQueue in FiniteRender are derived from the Physical Device. You must use a GPU that supports both.</p>
+<p>In order to use multiple swapchains, you'll need to manage the value of vk_swapchain.</p>
+<p>The <code>vk_image</code> array contains production ready images. This should not be confused with the <code>FiniteRenderImage</code></p>
+<h2 id="swaitandard-usage">Swaitandard Usage<a class="headerlink" href="#swaitandard-usage" title="Permanent link">*</a></h2>
+<p>When creating a FiniteRender instance you must have a valid <a href="../FiniteShell"><code>FiniteShell</code></a> to like to it.</p>
+<p>This struct should be created with <a href="../../functions/render/finite_render_init"><code>finite_render_init</code></a> and destroyed with <a href="../../functions/render/finite_render_cleanup"><code>finite_render_cleanup</code></a></p>
+<h2 id="related-docs">Related Docs<a class="headerlink" href="#related-docs" title="Permanent link">*</a></h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2025 Cubix Entertainment LLC | All rights reserved. <br>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, <a href="http://www.dougalmatthews.com/">Dougal Matthews</a>.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal bg-dark-blur" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn border-0" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
