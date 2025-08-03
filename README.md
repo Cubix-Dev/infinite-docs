@@ -1,7 +1,7 @@
 # libfinite
 Documentation for Libfinite, the Infinite C Library. Based off of the [MkDocs Slate theme.](https://github.com/mkdocs/mkdocs-bootswatch)
 
-## Are we there yet...?
+## Are we Libfinite yet...?
 > [!NOTE]
 > This list is subject to change. Check back regularly to see if anything new has been added!
 
